@@ -1,0 +1,40 @@
+{
+  "name": "tsn-cacheable",
+  "version": "1.0.0-beta",
+  "description": "A node typescript cache abstraction for backend with zero configuration",
+  "author": {
+    "name": "Felipe José",
+    "email": "lipej@pm.me"
+  },
+  "main": "build/main.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "mocha --exit -r ts-node/register \"test/**/*.spec.ts\""
+  },
+  "keywords": [
+    "cache",
+    "node",
+    "nodejs",
+    "typescript",
+    "redis"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ioredis": "^5.3.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/chai-as-promised": "^7.1.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.14.2",
+    "@types/sinon": "^10.0.13",
+    "chai": "^4.3.7",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^10.2.0",
+    "redis-memory-server": "^0.6.0",
+    "sinon": "^15.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}
