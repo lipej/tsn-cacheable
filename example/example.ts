@@ -1,5 +1,4 @@
-import { Cacheable } from "../lib/core/cacheable";
-
+import { Cacheable, RedisInstance } from "../lib/main";
 export class UserController {
     private readonly userRepository = {
         findById(id: string) {
@@ -24,4 +23,6 @@ export class UserController {
     const userData = await classInstance.getUserById('123')
 
     console.log({ userData })
+
+    RedisInstance.get().disconnect()
 })()

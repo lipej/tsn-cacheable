@@ -7,7 +7,9 @@ export class RedisInstance {
         if (!this.instance) {
             this.instance = new Redis({
                 host: getEnv('redisHost'),
-                port: Number(getEnv('redisPort'))
+                port: Number(getEnv('redisPort')),
+                username: getEnv('redisUsername'),
+                password: getEnv('redisPassword')
             })
         }
 
