@@ -1,6 +1,6 @@
 {
   "name": "tsn-cacheable",
-  "version": "1.0.0-beta",
+  "version": "1.0.0",
   "description": "A node typescript cache abstraction for backend with zero configuration",
   "author": {
     "name": "Felipe José",
